@@ -1,0 +1,24 @@
+{
+  "name": "sgp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.8.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-tools": "^9.16.0",
+    "heroku": "^7.56.1",
+    "lemmatizer": "0.0.1",
+    "natural": "^5.0.4",
+    "nodemon": "^2.0.12",
+    "pickle": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
