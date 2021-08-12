@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]
+        {
+            width:90%;
+            height:30px;
+            font-size: 20px;
+        }
+        input[type="submit"]
+        {
+            height: 38px;
+            font-size: 20px;
+
+        }
+        .msg h1{
+            display: block;
+            width: 100%;
+        }
+        
+        .msg h2{
+            display: block;
+        }
+        .left{
+            float: left;
+            width: 100%;
+            margin:2px;
+            color: black;
+        }
+        .right{
+            float: right;
+            margin:2px;
+            color: black;
+
+        }
+    </style>
+    <script src="./jquery.js"></script>
+</head>
+<body bgcolor="skyblue">
+    <center>
+        <h1>ChatBot</h1>
+    </center>
+        <br><br>
+        <input type="text" name="msg" id="msg">
+        <input type="submit" id="submit" value="Submit">
+        <div class="msgs" id="chat">
+
+        </div>
+        <script>
+            let btn = document.getElementById('submit');
+            const msg = document.getElementById('msg');
+            const chat = document.getElementById('chat');
+            btn.addEventListener('click',()=>{
+                
+             $.ajax({
+                    method:"GET",
+                    url:"/msg/"+msg.value,
+                    cors: true,
+                    contentType: "application/json",
+                    dataType: "json",
+                    secure: true,
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                    },
+                    success:function(data)
+                    {
+                        console.log(data);
+                        let h1 = document.createElement("h1");
+                        h1.setAttribute('class',"left");
+                        h1.innerHTML = msg.value;
+                        chat.appendChild(h1);
+                        if(data.length>1)
+                        {
+                            data.forEach(element => {
+                                let h2 = document.createElement("h1");
+                                h2.setAttribute('class',"right");
+                                h2.innerHTML =element;
+                                chat.appendChild(h2);
+
+                            });
+                        }
+                        else{
+                            let h2 = document.createElement("h1");
+                            h2.setAttribute('class',"right");
+                            h2.innerHTML = data[0];
+                            chat.appendChild(h2);
+                        }
+                    },
+                    error:function(data)
+                    {
+                        console.log(data);
+                    }
+                })
+            });
+        </script>
+
+</body>
+</html>

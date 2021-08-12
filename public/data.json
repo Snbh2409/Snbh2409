@@ -1,0 +1,83 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hello", "How are you?", "Hi there", "Hi", "Whats up"],
+     "responses": ["Howdy Partner!", "Hello", "How are you doing?", "Greetings!", "How do you do?"]
+    },
+    {
+   "tag": "yoga_tadasana",
+   "patterns": ["Tadasana","Yoga","Headache","Insomnia","Low blood pressure","Mountain Pose","stand with bases","big toes touching, heels slightly apart","Improves posture","Strengthens thighs, knees, and ankles","Firms abdomen and buttocks","Relieves sciatica","Reduces flat feet"],
+   "responses": ["Tadasana | Mountain Pose"]
+   },
+    {"tag": "age",
+     "patterns": ["how old are you?", "when is your birthday?", "when was you born?","what is your age"],
+     "responses": ["I am 24 years old", "I was born in 1996", "My birthday is July 3rd and I was born in 1996", "03/07/1996"]
+    },
+    {"tag": "date",
+     "patterns": ["what are you doing this weekend?",
+"do you want to hang out some time?", "what are your plans for this week"],
+     "responses": ["I am available all week", "I don't have any plans", "I am not busy"]
+    },
+    {"tag": "name",
+     "patterns": ["what's your name?", "what are you called?", "who are you?"],
+     "responses": ["My name is Kippi", "I'm Kippi", "Kippi"]
+    },
+    {"tag": "goodbye",
+     "patterns": [ "bye", "g2g", "see ya", "adios", "cya"],
+     "responses": ["It was nice speaking to you", "See you later", "Speak soon!"]
+    },
+    {
+    "tag": "yoga_suryanamaskar",
+    "patterns": [ "Suryanamaskara", "Yoga","For", "Pranamasana", "Prayer Pose", "burns calories", "12 pose", "immunity", "nervous system", "cardiovascular", "reduce weight", "relaxes the mind", "relaxation", "Pranamasana", "Prayer Pose", "Hastauttanasana", "Raised arms pose", "Hastapadasana", "Standing forward bend", "Ashwa Sanchalanasana", "Equestrian pose", "Dandasana", "Stick pose", "Ashtanga Namaskara", "Salute with eight parts or points", "Bhujangasana", "Cobra pose", "Adho Mukha Svanasana", "Downward facing dog pose", "Ashwa Sanchalanasana", "Equestrian pose", "Hastapadasana", "Standing forward bend", "Hastauttanasana", "Raised arms pose", "Tadasana", "Mountain Pose" ],
+    "responses": [ "Suryanamaskar" ]
+    },
+    { 
+    "tag": "yoga_shavasana", 
+    "patterns": [ "Shavasana", "Yoga","For", "bending the knees", "keeping the feet hip-width apart", "low back pain", "low back pain to recline comfortably", "ejuvenate the body, mind, and spirit", "breath deepens", "stress of day is released" ], 
+    "responses": [ "Shavasana" ] 
+    },
+    { 
+    "tag": "yoga_tadasana", 
+    "patterns": [ "Tadasana", "Yoga", "Headache","For", "Insomnia", "Low blood pressure", "Mountain Pose", "stand with bases", "big toes touching, heels slightly apart", "Improves posture", "Strengthens thighs, knees, and ankles", "Firms abdomen and buttocks", "Relieves sciatica", "Reduces flat feet" ], 
+    "responses": [ "Tadasana | Mountain Pose" ]
+    },
+    {
+    "tag": "yoga_dhanurasana",
+    "patterns": [ "Dharurasana", "Yoga", "For","Bow pose", "Urdva Chakrasana", "Abdomen Thorax", "Thigh", "Ankle", "Inguinal region", "Throat", "muscle","reduce fat", "weight loss", "energetic", "stomach disorders", "diabetes", "thoracic", "backbending", "Chest opener"],
+    "responses": [ "Dharurasana | Bow pose | Urdva Chakrasana" ]
+    },
+    {
+    "tag": "yoga_bhujangasana",
+    "patterns": ["Bhujangasana", "Yoga", "For","Lie flat on your stomach keeping your legs straight", "use the strength of your arms to raise your trunk", "stretch muscles", "arms", "shoulder", "chest", "abdomen", "decreases stiffness", "lower back", "flexibility", "stress", "depression", "anxiety", "blood circulation", "oxygen", "heart", "digestion", "spinal cord", "asthma"],
+    "responses": [ "Bhujangasana" ]
+    },
+    {
+    "tag": "yoga_vakrasana",
+    "patterns": ["Vakrasana" , "Yoga","For", "legs stretched out" , "kneeling asana", " Half Spinal Twist Pose", "Bend left leg from the knee and place", "spine straight", "stretches", "muscles", "stiffness", "vertebrae", "reduce fat", "weight loss", "abdominal organs", "joints"],
+    "responses": [ "Vakrasana |  Half Spinal Twist Pose" ]
+    },
+    {
+    "tag": "yoga_makrasana",
+    "patterns": ["Makrasana", "Yoga","For", "Crocodile pose", "reclining asana", "Lie down straight", "spine", "asthma" ,"knee pain", "lungs", "stretches", "muscles", "hips" , "relaxing after doing other yoga"],
+    "responses": [ "Makrasana | Crocodile pose" ]
+    },
+    {
+    "tag": "yoga_sasankasana",
+    "patterns": ["Sasankasana", "Yoga","For", "spine", "Stimulates", "abdomen", "Rabbit pose", "Crescent Moon Posture", "stretch", "back", "shoulder", "arms"],
+    "responses": [ "Sasankasana | Rabbit pose" ]
+    },
+    {
+    "tag": "yoga_trikonasana",
+    "patterns": ["Trikonasana", "Utthita Trikonasana", "Triangle pose","For", "Yoga", "stretch", "Thigh", "ankle", "hips", "back", "muscles", "chest", "shoulder", "spine", "flexibility", "backache", "gastritis", "indigestion", "acidity", "flatulence", "depression", "nervous"],
+    "responses": [ "Trikonasana | Utthita Trikonasana | Triangle pose" ]
+    },
+    {
+    "tag": "yoga_halasana",
+    "patterns": ["Halasana", "Yoga","For", "Plow pose", "Vertebral column", "diabetes", "obesity", "constipation", "stomach disorder", "blood pressure", "menstrual disorders", "menstrual", "back", "flexible", "reduce fat", "memory power", "meory"],
+    "responses": [ "Halasana | Plow pose" ]
+    },
+    {
+    "tag": "yoga_vajrasana",
+    "patterns": [ "Vajrasana", "Yoga","For", "Thunderbolt Pose", "Diamond Pose", "concentration", "memory", "mind stable", "calm mind", "mind", "indigestion", "acidity", "gas", "gas problem", "constipation", "digestion", "back pain", "stomach disorders", "urinary problems", "reduce obesity", "thigh", "muscles", "arthritis", "relieving pain in the knees", "reduce pain of knee"],
+    "responses": [ "vajrasana | Thunderbolt Pose | Diamond Pose" ]
+    }
+]}
